@@ -46,10 +46,11 @@
         <article class="project featured" data-category="vision">
           <div class="project-top"><span class="project-type">COMPUTER VISION</span><span class="project-date">2026 · In progress</span></div>
           <h3>Vision II</h3><p class="project-subtitle">Making sense of the penalty kick.</p>
-          <p>A reproducible Python workflow that turns World Cup shoot-out footage into structured features: run-up steps, goalkeeper movement and ball trajectories.</p>
+          <p>A reproducible, human-reviewed computer vision workflow for 39 World Cup penalties: kicking foot, run-up steps, goalkeeper behaviour, ball trajectories and observed outcomes.</p>
           <div class="project-stats"><div><strong>39</strong><span>penalty kicks reviewed</span></div><div><strong>4</strong><span>World Cup shoot-outs</span></div></div>
           <div class="tags"><span>Python</span><span>YOLO11</span><span>OpenCV</span><span>SciPy</span></div>
-          <details><summary>Explore the approach</summary><div class="detail-body"><p>Used pretrained YOLO11 models and hip-relative ankle trajectories for pose-based feature extraction. Camera-motion compensation supported goalkeeper analysis, while motion-constrained beam search linked ball detections.</p><p>All 39 kicks received manual step-count confirmation. This describes review coverage, not automatic model accuracy. Outputs include CSV features, diagnostic JSON, confidence scores and visual review reports.</p><p class="role">Group project · Aug–Nov 2026 (planned)</p></div></details>
+          <a class="case-link" href="vision-ii.html">Read the Vision II case study</a>
+          <details><summary>At a glance</summary><div class="detail-body"><p>Pretrained YOLO11 models provide visual observations. Project-specific rules extract features, optical flow compensates for camera motion, and motion-constrained beam search associates ball detections.</p><p>All 39 kicks have manually confirmed step counts. The automatic step baseline has an MAE of 2.66 steps across 35 successful runs. Goalkeeper and ball outputs retain review flags for uncertain cases.</p><p>The full case study includes methodology, evaluation, code attribution and an interactive explorer of all 39 penalties.</p><p class="role">Group project · Aug–Nov 2026 (planned)</p></div></details>
         </article>
         <article class="project" data-category="vision">
           <div class="project-top"><span class="project-type">RELIABLE AI</span><span class="project-date">2024–2025</span></div>
