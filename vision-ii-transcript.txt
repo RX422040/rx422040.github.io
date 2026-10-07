@@ -1,0 +1,23 @@
+VISION II — Inside the penalty kick
+English narration / synthetic voice
+
+Inside the penalty kick.
+Vision Two turns football penalty video into structured, reviewable evidence. This project connects computer vision with human judgement.
+
+39 kicks. Four shoot-outs.
+The dataset covers thirty-nine penalties from four twenty-eighteen World Cup shoot-outs. Shared clip identifiers connect model observations, human labels, and final feature tables.
+
+From pixels to features.
+Pretrained YOLO eleven models extract observations. Optical flow compensates for camera motion, while motion-constrained beam search links ball detections. Human review resolves uncertain cases.
+
+Four views of one moment.
+The workflow describes the taker, goalkeeper, ball trajectory, and observed outcome. Goal labels are kept separate from ball tracking, so a tracking error does not automatically change the result.
+
+Measure error. Keep the denominator.
+All thirty-nine step counts are manually confirmed. Automatic counting produced thirty-five outputs, with four failures. Mean absolute error is two point six six steps, so manual review remains essential.
+
+Make uncertainty visible.
+Automatic quality checks accepted eighteen goalkeeper records and twenty-six ball trajectories. The remaining records require review. These acceptance counts measure quality-control status, not detection accuracy.
+
+Evidence you can inspect.
+The result is an auditable dataset, with explicit uncertainty. Explore the methods, limitations, and all thirty-nine penalties in the Vision Two case study on my portfolio.

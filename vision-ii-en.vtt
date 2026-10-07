@@ -1,0 +1,69 @@
+WEBVTT
+
+1
+00:00:00.300 --> 00:00:05.263
+Vision Two turns football penalty video into structured, reviewable evidence.
+
+2
+00:00:05.263 --> 00:00:09.233
+This project connects computer vision with human judgement.
+
+3
+00:00:10.333 --> 00:00:15.929
+The dataset covers thirty-nine penalties from four twenty-eighteen World Cup shoot-outs.
+
+4
+00:00:15.929 --> 00:00:22.033
+Shared clip identifiers connect model observations, human labels, and final feature tables.
+
+5
+00:00:23.133 --> 00:00:26.458
+Pretrained YOLO eleven models extract observations.
+
+6
+00:00:26.458 --> 00:00:33.662
+Optical flow compensates for camera motion, while motion-constrained beam search links ball detections.
+
+7
+00:00:33.662 --> 00:00:36.433
+Human review resolves uncertain cases.
+
+8
+00:00:37.533 --> 00:00:42.161
+The workflow describes the taker, goalkeeper, ball trajectory, and observed outcome.
+
+9
+00:00:42.161 --> 00:00:49.733
+Goal labels are kept separate from ball tracking, so a tracking error does not automatically change the result.
+
+10
+00:00:50.833 --> 00:00:54.229
+All thirty-nine step counts are manually confirmed.
+
+11
+00:00:54.229 --> 00:00:58.109
+Automatic counting produced thirty-five outputs, with four failures.
+
+12
+00:00:58.109 --> 00:01:04.900
+Mean absolute error is two point six six steps, so manual review remains essential.
+
+13
+00:01:06.000 --> 00:01:12.175
+Automatic quality checks accepted eighteen goalkeeper records and twenty-six ball trajectories.
+
+14
+00:01:12.175 --> 00:01:14.981
+The remaining records require review.
+
+15
+00:01:14.981 --> 00:01:20.033
+These acceptance counts measure quality-control status, not detection accuracy.
+
+16
+00:01:21.133 --> 00:01:24.987
+The result is an auditable dataset, with explicit uncertainty.
+
+17
+00:01:24.987 --> 00:01:32.267
+Explore the methods, limitations, and all thirty-nine penalties in the Vision Two case study on my portfolio.
