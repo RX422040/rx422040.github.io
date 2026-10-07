@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#153ef5">
+  <title>Numerical Analysis in MATLAB | Ruizhe Xu</title>
+  <meta name="description" content="MATLAB coursework exploring linear systems, interpolation, regression, Newton iteration, signal smoothing, numerical differentiation and quadrature.">
+  <meta property="og:title" content="Numerical Analysis in MATLAB | Ruizhe Xu"><meta property="og:description" content="From implementing numerical methods to checking their behaviour against examples and known results."><meta property="og:type" content="article"><meta property="og:url" content="https://rx422040.github.io/numerical-analysis.html">
+  <link rel="canonical" href="https://rx422040.github.io/numerical-analysis.html"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="vision-ii.css"><link rel="stylesheet" href="research-projects.css"><link rel="stylesheet" href="numerical-analysis.css">
+</head>
+<body class="case-page numerical-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav wrap" aria-label="Main navigation"><a class="brand" href="index.html" aria-label="Ruizhe Xu home"><span class="monogram">rx<span>.</span></span><span>RUIZHE XU</span></a><div class="nav-links"><a href="index.html#work">All projects</a><a href="#workflow">Methods</a><a href="#results">Results</a></div></nav></header>
+<main id="main">
+  <section class="case-hero wrap" id="top">
+    <a class="breadcrumb" href="index.html#work">Selected work / Numerical analysis</a>
+    <div class="case-hero-grid"><div>
+      <p class="eyebrow">MATLAB · MA2252 · COURSEWORK</p>
+      <h1>Numerical<br><span>analysis.</span></h1>
+      <p class="case-lead">Turning mathematical methods into working code.</p>
+      <p class="case-intro">I developed MATLAB routines across nine coursework exercises, from solving linear systems to smoothing noisy signals and approximating integrals. The project connects algorithm implementation with numerical examples, visual inspection and error checks.</p>
+      <div class="hero-actions"><a class="button primary" href="#workflow">Explore the methods</a><a class="button secondary" href="#results">See the error study</a></div>
+    </div><aside class="study-brief" aria-label="Project scope">
+      <span class="column-label">FROM THEORY TO COMPUTATION</span><div class="brief-number">9<span>numerical analysis exercises</span></div>
+      <div class="brief-grid"><div><strong>MATLAB</strong><span>implementation language</span></div><div><strong>10–40</strong><span>integration subintervals</span></div></div>
+      <p>Linear systems · Approximation · Calculus<br>Implemented routines, worked examples and a comparison with an exact integral.</p><div class="tags"><span>Numerical methods</span><span>Error analysis</span></div>
+    </aside></div>
+  </section>
+  <nav class="case-nav" aria-label="Case study sections"><div class="wrap"><a href="#workflow">Methods</a><a href="#smoothing">Smoothing & derivatives</a><a href="#results">Integration results</a><a href="#reflection">Reflection & sources</a></div></nav>
+  <section id="workflow" class="case-section wrap">
+    <div class="case-section-head"><p class="eyebrow">01 / IMPLEMENTATION</p><h2>A toolkit of numerical methods.</h2><p>The exercises cover several ways to translate a mathematical problem into a computation. Small examples make the steps and their outputs inspectable.</p></div>
+    <ol class="workflow-grid">
+      <li><span class="step-number">01</span><h3>Linear systems</h3><p>Compare the ranks of A and [A | b] to classify solution sets. Implement forward and backward substitution, then combine the routines to solve a system from supplied triangular factors.</p></li>
+      <li><span class="step-number">02</span><h3>Regression</h3><p>Fit a rational response curve by applying a reciprocal transformation and linear regression. Transform the fitted coefficients back and plot the curve against synthetic data.</p></li>
+      <li><span class="step-number">03</span><h3>Interpolation</h3><p>Implement linear filling of interior missing values using neighbouring observations. Explore cubic-spline construction through a system for the nodal second derivatives.</p></li>
+      <li><span class="step-number">04</span><h3>Newton iteration</h3><p>Apply Newton’s method to the derivative of a polynomial to find a stationary point. Use the change between successive iterates as the stopping criterion.</p></li>
+      <li><span class="step-number">05</span><h3>Smoothing & differentiation</h3><p>Apply a moving average to a noisy sine signal, then use central differences in the interior and one-sided differences at the endpoints to estimate its derivative.</p></li>
+      <li><span class="step-number">06</span><h3>Numerical integration</h3><p>Implement the composite trapezoidal rule. Refine the partition from 10 to 20 to 40 subintervals and compare the result with the known value π/4.</p></li>
+    </ol>
+    <aside class="finding"><strong>A worked optimisation example</strong><p>For f(x) = −x⁴ + 2x, the reported iteration gives x ≈ 0.793701. This agrees with the stationary point x = ∛(1/2); the second derivative is negative there.</p></aside>
+  </section>
+  <section id="smoothing" class="case-tint"><div class="case-section wrap">
+    <div class="case-section-head"><p class="eyebrow">02 / SIGNALS & NUMERICAL DERIVATIVES</p><h2>Smooth the signal. Inspect the derivative.</h2><p>The experiment uses 1,000 samples of sin(x) with additive Gaussian noise of scale 0.1 over [0, 2π]. Four window half-widths—k = 1, 5, 10 and 20—show how averaging changes both the signal and the derivative estimate.</p></div>
+    <figure class="research-figure"><a href="numerical-smoothing-original.png" target="_blank" rel="noopener"><img src="numerical-smoothing-original.png" width="2556" height="1526" loading="lazy" alt="Original MATLAB figure: noisy sine data and moving-average curves above; finite-difference derivative estimates for k equal to 1, 5, 10 and 20 below, with cosine as the reference."></a><figcaption><strong>Original coursework output · Question 8</strong>The upper plot compares the noisy signal with its smoothed versions. The lower plot compares their numerical derivatives with cos(x). Larger averaging windows reduce the visible fluctuations in this example. Open the figure to inspect it at full resolution.</figcaption></figure>
+    <div class="prose-grid figure-explanation"><div><h3>Read k as a half-width</h3><p>An interior moving average uses 2k + 1 samples: 3, 11, 21 or 41 for the settings shown. The window is shortened near the ends of the signal.</p></div><div><h3>Check more than smoothness</h3><p>The smallest window leaves large fluctuations in the derivative. A smoother curve is useful, but it still needs checking against the known derivative, particularly at the boundaries. The figure provides a qualitative comparison rather than a reported derivative-error score.</p></div></div>
+  </div></section>
+  <section id="results" class="case-section wrap">
+    <div class="case-section-head"><p class="eyebrow">03 / QUADRATURE & ERROR</p><h2>Refine the grid. Measure the difference.</h2><p>Integrating the quarter-circle function gives a simple reference value for checking the implementation. All three approximations below reproduce the command-window results in the coursework.</p></div>
+    <div class="math-block">I = ∫<sub>0</sub><sup>1</sup> √(1 − x²) dx = π/4 ≈ 0.785398<small>For n equally spaced subintervals, h = 1/n and T<sub>n</sub> = h [f(0)/2 + Σ<sub>j=1</sub><sup>n−1</sup> f(jh) + f(1)/2]. Absolute error = |π/4 − T<sub>n</sub>|.</small></div>
+    <div class="research-table-wrap" tabindex="0" role="region" aria-label="Trapezoidal integration results"><table class="research-table"><caption>Question 9 output, with absolute errors recomputed from the displayed function and partition sizes. Values rounded to six decimal places.</caption><thead><tr><th scope="col">Subintervals n</th><th scope="col">Approximation T<sub>n</sub></th><th scope="col">Absolute error</th></tr></thead><tbody><tr><th scope="row">10</th><td>0.776130</td><td>0.009269</td></tr><tr><th scope="row">20</th><td>0.782116</td><td>0.003282</td></tr><tr><th scope="row">40</th><td>0.784237</td><td>0.001161</td></tr></tbody></table></div>
+    <div class="research-metrics"><article><strong>0.784237</strong><span>Approximation with 40 subintervals</span><small>Exact value: π/4 ≈ 0.785398</small></article><article><strong>87.5%</strong><span>Reduction in absolute error</span><small>From n = 10 to n = 40; recomputed</small></article><article><strong>≈ 2.83×</strong><span>Smaller error on each refinement</span><small>Observed for these two grid doublings</small></article></div>
+    <aside class="finding"><strong>A numerical trend, with a defined reference</strong><p>The approximations approach π/4 from below as the partition is refined. These three runs demonstrate decreasing error for this function; they are not a general accuracy guarantee for every integrand.</p></aside>
+  </section>
+  <section id="reflection" class="case-tint"><div class="case-section wrap">
+    <div class="case-section-head"><p class="eyebrow">04 / REFLECTION</p><h2>An algorithm also needs checks.</h2></div>
+    <div class="prose-grid"><div><h3>What I practised</h3><p>Breaking mathematical procedures into reusable MATLAB functions, using loops and array operations, interpreting diagnostic plots, and checking numerical outputs against known solutions.</p><p>The linear-system examples distinguish no solution, one solution and infinitely many solutions. The calculus exercises connect an implementation to a stationary-point calculation or an exact integral.</p></div><div><h3>What I would strengthen</h3><p>Add systematic tests for spline interpolation at the knots, missing values at the edges, singular triangular systems and Newton iterations that fail to converge. Benchmark the routines against trusted implementations and record reproducible random seeds for noisy-data experiments.</p><p>The supplied report is a coursework record with code screenshots and worked examples. Its scope is educational implementation, rather than a fully tested numerical library.</p></div></div>
+    <div class="research-source"><strong>Source record and verification</strong><p><cite>MA2252 numerical analysis coursework</cite>, supplied as <code>MA2252-2023-CA2-rx33.docx</code>, Questions 1–9. The signal figure is the original embedded image from Question 8. Integration values were independently recalculated using the function and composite trapezoidal rule shown in Question 9.</p><p>The final prose in the source labels the smallest integration error as n = 30. The code, printed output and recalculation all identify that run as n = 40, which is the value used here.</p></div>
+  </div></section>
+  <section class="case-close"><div class="wrap"><div><p class="eyebrow">NUMERICAL ANALYSIS / RUIZHE XU</p><h2>From mathematical steps to results I can inspect.</h2></div><a class="button secondary" href="index.html#work">Back to all projects</a></div></section>
+</main><footer class="wrap footer"><span>© 2026 Ruizhe Xu</span><span>Numerical Analysis in MATLAB</span><a href="#top">Back to top</a></footer>
+</body></html>

@@ -1,0 +1,9 @@
+.numerical-page .figure-explanation{margin-top:30px}
+.numerical-page .research-metrics strong{white-space:nowrap}
+@media(max-width:720px){
+  .numerical-page .research-metrics article{display:block}
+  .numerical-page .research-metrics strong{font-size:36px;margin-bottom:8px}
+  .numerical-page .research-metrics small{margin-top:6px}
+  .numerical-page .research-table{min-width:0;font-size:11px}
+  .numerical-page .research-table th,.numerical-page .research-table td{padding:12px 8px}
+}
