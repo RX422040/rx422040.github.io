@@ -1,21 +1,12 @@
 /* Retain the original light/blue portfolio; refine only the requested hero media. */
-.visual-home .hero-stage:before{background:linear-gradient(90deg,rgba(250,252,255,.98) 0%,rgba(245,249,255,.95) 40%,rgba(234,242,255,.89) 100%),url("mathematics-to-embodied-ai.webp") center/cover no-repeat}
+.visual-home .hero-stage:before{background:linear-gradient(90deg,rgba(250,252,255,.98) 0%,rgba(245,249,255,.95) 40%,rgba(234,242,255,.89) 100%),url("mathematics-ai-hero.webp") center/cover no-repeat}
 .visual-home .hero-visual.abstract-hero{height:auto;min-width:0;padding:0;margin:0;width:100%;border:1px solid #dbe4f3;border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 20px 48px #21386316}
-.abstract-hero .hero-scene{height:auto;aspect-ratio:3/2;border:0;border-radius:0;box-shadow:none;background:#eaf1f7}
+.abstract-hero .hero-scene{height:auto;aspect-ratio:3/2;border:0;border-radius:0;box-shadow:none;background:#0b151d}
 .abstract-hero .hero-scene>img{width:100%;height:100%;object-fit:contain;object-position:center}
 .abstract-hero .scene-tag{font-size:8px;letter-spacing:1.1px;background:#101d38cf}
 .abstract-caption{padding:20px 24px;display:flex;flex-direction:column;gap:5px;border-top:1px solid #e0e7f2;background:linear-gradient(110deg,#fff,#f2f6ff)}
 .abstract-caption strong{color:#233757;font-size:14px;font-weight:600}
 .abstract-caption>span{color:#62728b;font-size:11px;letter-spacing:.3px}
-.visual-home .contact-section{background:linear-gradient(100deg,#1236c8fa,#1638b7ed 52%,#102448c9),url("mathematics-to-embodied-ai.webp") center/cover}
-.journey-stages{list-style:none;padding:0;margin:13px 0 9px;display:grid;grid-template-columns:.95fr 1.1fr 1.1fr;gap:18px}
-.journey-stages li{position:relative;min-width:0;border-top:2px solid #ccd8ee;padding-top:12px}
-.journey-stages li:last-child{border-color:#153ef5}
-.journey-stages li+li:before{content:"→";position:absolute;left:-15px;top:20px;color:#6b83b1;font-size:12px}
-.journey-stages small{display:block;color:#6c7b92;font-size:8px;letter-spacing:.4px;line-height:1.5;margin-bottom:7px}
-.journey-stages span{display:block;color:#243c61;font-size:12px;font-weight:600;line-height:1.45}
-.journey-stages li:last-child span{color:#153ef5}
-.abstract-caption>.journey-note{font-size:9px;color:#76839a;letter-spacing:0;line-height:1.5}
-@media(max-width:420px){.journey-stages{gap:14px}.journey-stages small{font-size:7px;letter-spacing:0}.journey-stages span{font-size:11px}.journey-stages li+li:before{left:-12px}}
+.visual-home .contact-section{background:linear-gradient(100deg,#1236c8fa,#1638b7ed 52%,#102448c9),url("mathematics-ai-hero.webp") center/cover}
 @media(max-width:720px){.visual-home .hero-visual.abstract-hero{max-width:480px;margin-inline:auto;border-radius:14px}.abstract-caption{padding:17px 20px}.abstract-caption strong{font-size:13px}.abstract-caption>span{font-size:10px}.abstract-hero .scene-tag{font-size:7px;letter-spacing:.7px}}
 @media print{.visual-home .hero-visual.abstract-hero{display:none}.visual-home .contact-section{background:#fff}}
