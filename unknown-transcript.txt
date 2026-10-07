@@ -1,0 +1,22 @@
+Recognising the unknown
+English narration / synthetic voice
+
+When the world looks unfamiliar.
+What should a detector do when it encounters something outside its training categories? I led a research group exploring unknown-object detection for autonomous driving.
+
+Reproduce. Adapt. Inspect.
+We reproduced Spatial Temporal Unknown Distillation, or STUD, using Python and Detectron2. My work combined research planning, environment setup, data preparation, and inspection of detection results.
+
+Different sources. One workflow.
+The data work covered BDD one hundred K, COCO twenty seventeen, and YouTube VIS. Adapting formats and selected categories helped connect these sources to the reproduced baseline.
+
+Confidence is not correctness.
+One reported example labels giraffes as unknown, but also labels a rock as a train at seventy-one percent confidence. This is a single detection score, not overall accuracy.
+
+How much difficult weather?
+The midterm plan proposed adverse-weather shares of twenty-five, fifty, seventy-five, and one hundred percent, keeping the training-set size fixed. These are proposed experiment settings, not measured improvements.
+
+Make uncertainty visible.
+The contribution is a documented research process: reproduction, data adaptation, and failure analysis. PAIR remained exploratory. Explore the full case study for the evidence and planned next steps.
+
+Full case study: https://rx422040.github.io/autonomous-driving.html

@@ -1,0 +1,69 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:04.432
+How do edge chemistry and dispersion corrections change electronic predictions?
+
+2
+00:00:05.118 --> 00:00:10.057
+My capstone investigates pentagonal palladium diselenide nanoribbons through density functional
+
+3
+00:00:10.057 --> 00:00:11.530
+theory calculations.
+
+4
+00:00:13.083 --> 00:00:18.666
+I modelled four hydrogen-passivated edge families: A A, Z Z, Z A, and S S.
+
+5
+00:00:18.666 --> 00:00:24.362
+Fluorine and hydroxyl substitutions at central and lateral sites created four modified configurations.
+
+6
+00:00:25.917 --> 00:00:31.354
+Using Materials Studio and CASTEP, I optimised atomic structures and inspected band structures
+
+7
+00:00:31.354 --> 00:00:32.790
+and density of states.
+
+8
+00:00:33.476 --> 00:00:38.055
+The pristine comparison covers P B E, Grimme, and the T S correction.
+
+9
+00:00:39.617 --> 00:00:45.175
+For the pristine A A three example, the reported band gap is zero point five eight seven electronvolts
+
+10
+00:00:45.175 --> 00:00:48.796
+with P B E, and zero point five eight one with Grimme.
+
+11
+00:00:50.350 --> 00:00:55.593
+Across the four modified structures, Grimme gaps range from zero point eight seven zero to zero
+
+12
+00:00:55.593 --> 00:00:57.891
+point nine zero seven electronvolts.
+
+13
+00:00:58.577 --> 00:01:03.071
+The corresponding P B E predictions are lower, as the thesis table shows.
+
+14
+00:01:04.617 --> 00:01:08.541
+These reported calculations demonstrate sensitivity to the chosen method.
+
+15
+00:01:09.227 --> 00:01:11.853
+They do not establish experimental accuracy.
+
+16
+00:01:12.540 --> 00:01:17.904
+Explore the original models, plots, calculation settings, and limitations in the full project
+
+17
+00:01:17.904 --> 00:01:18.600
+page.

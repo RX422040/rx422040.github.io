@@ -1,0 +1,22 @@
+A closer look at PdSe₂
+English narration / synthetic voice
+
+A closer look at PdSe₂.
+How do edge chemistry and dispersion corrections change electronic predictions? My capstone investigates pentagonal palladium diselenide nanoribbons through density functional theory calculations.
+
+Four edge families. Four modifications.
+I modelled four hydrogen-passivated edge families: A A, Z Z, Z A, and S S. Fluorine and hydroxyl substitutions at central and lateral sites created four modified configurations.
+
+Build. Relax. Compare.
+Using Materials Studio and CASTEP, I optimised atomic structures and inspected band structures and density of states. The pristine comparison covers P B E, Grimme, and the T S correction.
+
+A difference of six millielectronvolts.
+For the pristine A A three example, the reported band gap is zero point five eight seven electronvolts with P B E, and zero point five eight one with Grimme.
+
+A stronger method dependence.
+Across the four modified structures, Grimme gaps range from zero point eight seven zero to zero point nine zero seven electronvolts. The corresponding P B E predictions are lower, as the thesis table shows.
+
+Trace the prediction to its settings.
+These reported calculations demonstrate sensitivity to the chosen method. They do not establish experimental accuracy. Explore the original models, plots, calculation settings, and limitations in the full project page.
+
+Full case study: https://rx422040.github.io/pdse2.html

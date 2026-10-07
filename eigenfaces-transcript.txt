@@ -1,0 +1,22 @@
+Eigenfaces
+English narration / synthetic voice
+
+Recognising familiar faces.
+Can a compact mathematical representation recognise familiar people? I adapted an Eigenfaces workflow to photographs of people I know, connecting linear algebra with a practical recognition task.
+
+From pixels to principal components.
+The workflow prepares consistent grayscale images and subtracts the training mean face. Principal component analysis then learns directions of variation, giving each image a smaller set of coefficients.
+
+Find the nearest neighbour.
+A test image is projected into the same learned space. A one-nearest-neighbour classifier assigns the identity of the closest training example. Reconstruction and recognition are checked separately.
+
+A custom photo dataset.
+I replaced the reference dataset with photographs of people around me. Recognition worked in this trial, with qualitatively similar results. A separate numerical evaluation of my custom dataset is still needed.
+
+38 of 40. In the ORL report.
+The original ORL report records thirty-eight correct predictions out of forty test images, or ninety-five percent. The matrix shown here is that reference result, not a measurement of my custom photographs.
+
+A representation you can inspect.
+The project connects preprocessing, dimensionality reduction, and classification. Next steps are to document the custom split, repeat evaluation, and test lighting changes. Read the full case study on my portfolio.
+
+Full case study: https://rx422040.github.io/eigenfaces.html
