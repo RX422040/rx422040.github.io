@@ -1,0 +1,32 @@
+Numerical analysis
+English narration / synthetic voice
+
+From continuous ideas to finite calculations.
+This MATLAB coursework explores numerical methods through nine exercises. Linear systems, interpolation, regression, Newton iteration, smoothing, differentiation and quadrature connect mathematical assumptions to finite computations.
+Source: MA2252 Coursework 2 / numerical analysis in MATLAB
+
+Locate a stationary point.
+For the function minus x to the fourth plus two x, Newton iteration gives a stationary point near point seven nine three seven zero one. The exact value is the cube root of one half, and the second derivative is negative there.
+Source: Original coursework / Question 7 / MATLAB output
+
+Differentiation magnifies noise.
+The original plot compares a noisy sine signal and several smoothed versions, then their numerical derivatives. Window half-widths of one, five, ten and twenty correspond to windows of three, eleven, twenty-one and forty-one samples.
+Source: Original MATLAB plot / application chrome removed / no new signal data generated
+
+Choose the smoothing scale deliberately.
+Larger windows suppress more high-frequency noise but can also smooth away useful detail. The derivative makes this tradeoff especially visible. The coursework provides a visual comparison; it does not report a numerical smoothing error score.
+Source: Original smoothing and differentiation exercise
+
+Three grids. One exact reference.
+The trapezoidal rule approximates the integral of square root of one minus x squared from zero to one. With ten, twenty and forty subintervals, the original output approaches the exact value pi over four.
+Source: Original coursework / Question 9 / MATLAB output
+
+Measure the rate, not just the trend.
+Recomputing these grids gives a relative error of about point one four eight percent at forty subintervals. The observed convergence order is approximately one point five. The endpoint derivative is unbounded, so the usual smooth-function second-order assumption does not apply directly.
+Source: Calculated from the stated integral / values match the original six-decimal output
+
+A numerical answer needs an error check.
+The project develops a practical habit: implement the method, inspect the output, and test it against a mathematical reference whenever possible. Explore the original MATLAB figures and independent convergence check in the complete case study.
+Source: rx422040.github.io/numerical-analysis.html
+
+Full case study: https://rx422040.github.io/numerical-analysis.html

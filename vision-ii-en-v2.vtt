@@ -1,0 +1,109 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:04.735
+Vision Two turns football penalty video into structured, reviewable evidence.
+
+2
+00:00:05.421 --> 00:00:08.484
+This project connects computer vision with human judgement.
+
+3
+00:00:10.050 --> 00:00:14.593
+The dataset covers thirty-nine penalties from four twenty-eighteen World Cup shoot-outs.
+
+4
+00:00:15.279 --> 00:00:20.939
+Shared clip identifiers connect model observations, human labels, and final feature tables.
+
+5
+00:00:22.517 --> 00:00:25.591
+Pretrained YOLO eleven models extract observations.
+
+6
+00:00:26.277 --> 00:00:30.768
+Optical flow compensates for camera motion, while motion-constrained beam search links ball
+
+7
+00:00:30.768 --> 00:00:31.670
+detections.
+
+8
+00:00:32.357 --> 00:00:34.995
+Human review resolves uncertain cases.
+
+9
+00:00:36.550 --> 00:00:40.571
+This original frame shows the selected taker and retained pose keypoints.
+
+10
+00:00:41.257 --> 00:00:45.206
+In this example, the automatic and manual counts both equal four.
+
+11
+00:00:45.893 --> 00:00:49.805
+A successful example does not establish accuracy across the dataset.
+
+12
+00:00:51.350 --> 00:00:56.282
+These four original frames run from one second before the kick to point eight seconds afterwards.
+
+13
+00:00:56.967 --> 00:00:59.460
+Yellow circles mark goalkeeper positions.
+
+14
+00:01:00.147 --> 00:01:05.552
+The exported movement is a low dive towards image left, with automatic quality checks accepted.
+
+15
+00:01:07.117 --> 00:01:11.636
+The ball sequence samples frames sixty-seven, seventy-four and seventy-six.
+
+16
+00:01:12.322 --> 00:01:16.646
+Yellow circles show selected candidates; magenta crosses show ankle anchors.
+
+17
+00:01:17.334 --> 00:01:22.338
+Detector confidence and quality-check acceptance do not independently verify every tracked point.
+
+18
+00:01:23.883 --> 00:01:27.893
+Automatic counting produced thirty-five outputs, with four failures.
+
+19
+00:01:28.578 --> 00:01:33.603
+Against manually confirmed counts, mean absolute error is two point six five seven steps and
+
+20
+00:01:33.603 --> 00:01:36.653
+root mean squared error is three point three seven six.
+
+21
+00:01:37.341 --> 00:01:40.658
+Four predictions match exactly; twelve are within one step.
+
+22
+00:01:42.217 --> 00:01:47.549
+Automatic quality checks accepted eighteen goalkeeper records and twenty-six ball trajectories.
+
+23
+00:01:48.235 --> 00:01:50.423
+The remaining records require review.
+
+24
+00:01:51.111 --> 00:01:55.436
+These acceptance counts measure quality-control status, not detection accuracy.
+
+25
+00:01:57.017 --> 00:02:00.565
+The result is an auditable dataset, with explicit uncertainty.
+
+26
+00:02:01.251 --> 00:02:05.984
+Explore the methods, limitations, and all thirty-nine penalties in the Vision Two case study
+
+27
+00:02:05.984 --> 00:02:07.323
+on my portfolio.

@@ -1,0 +1,105 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:04.711
+This MATLAB coursework explores numerical methods through nine exercises.
+
+2
+00:00:05.397 --> 00:00:11.137
+Linear systems, interpolation, regression, Newton iteration, smoothing, differentiation and
+
+3
+00:00:11.137 --> 00:00:14.977
+quadrature connect mathematical assumptions to finite computations.
+
+4
+00:00:16.550 --> 00:00:21.332
+For the function minus x to the fourth plus two x, Newton iteration gives a stationary point
+
+5
+00:00:21.332 --> 00:00:23.884
+near point seven nine three seven zero one.
+
+6
+00:00:24.570 --> 00:00:29.247
+The exact value is the cube root of one half, and the second derivative is negative there.
+
+7
+00:00:30.817 --> 00:00:35.720
+The original plot compares a noisy sine signal and several smoothed versions, then their numerical
+
+8
+00:00:35.720 --> 00:00:36.573
+derivatives.
+
+9
+00:00:37.259 --> 00:00:43.522
+Window half-widths of one, five, ten and twenty correspond to windows of three, eleven, twenty-one
+
+10
+00:00:43.522 --> 00:00:45.225
+and forty-one samples.
+
+11
+00:00:46.817 --> 00:00:51.845
+Larger windows suppress more high-frequency noise but can also smooth away useful detail.
+
+12
+00:00:52.531 --> 00:00:55.254
+The derivative makes this tradeoff especially visible.
+
+13
+00:00:55.941 --> 00:01:00.505
+The coursework provides a visual comparison; it does not report a numerical smoothing error
+
+14
+00:01:00.505 --> 00:01:01.128
+score.
+
+15
+00:01:02.683 --> 00:01:07.489
+The trapezoidal rule approximates the integral of square root of one minus x squared from zero
+
+16
+00:01:07.489 --> 00:01:08.125
+to one.
+
+17
+00:01:08.810 --> 00:01:14.381
+With ten, twenty and forty subintervals, the original output approaches the exact value pi over
+
+18
+00:01:14.381 --> 00:01:14.992
+four.
+
+19
+00:01:16.550 --> 00:01:21.016
+Recomputing these grids gives a relative error of about point one four eight percent at forty
+
+20
+00:01:21.016 --> 00:01:22.028
+subintervals.
+
+21
+00:01:22.714 --> 00:01:26.237
+The observed convergence order is approximately one point five.
+
+22
+00:01:26.925 --> 00:01:31.694
+The endpoint derivative is unbounded, so the usual smooth-function second-order assumption does
+
+23
+00:01:31.694 --> 00:01:32.924
+not apply directly.
+
+24
+00:01:34.483 --> 00:01:39.483
+The project develops a practical habit: implement the method, inspect the output, and test it
+
+25
+00:01:39.483 --> 00:01:42.133
+against a mathematical reference whenever possible.
+
+26
+00:01:42.819 --> 00:01:47.763
+Explore the original MATLAB figures and independent convergence check in the complete case study.

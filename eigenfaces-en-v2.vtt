@@ -1,0 +1,105 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:04.177
+Can a compact mathematical representation recognise familiar people?
+
+2
+00:00:04.863 --> 00:00:10.069
+I adapted an Eigenfaces workflow to photographs of people I know, connecting linear algebra
+
+3
+00:00:10.069 --> 00:00:12.076
+with a practical recognition task.
+
+4
+00:00:13.650 --> 00:00:18.424
+The workflow prepares consistent grayscale images and subtracts the training mean face.
+
+5
+00:00:19.110 --> 00:00:24.001
+Principal component analysis then learns directions of variation, giving each image a smaller
+
+6
+00:00:24.001 --> 00:00:25.279
+set of coefficients.
+
+7
+00:00:26.850 --> 00:00:29.852
+A test image is projected into the same learned space.
+
+8
+00:00:30.538 --> 00:00:35.154
+A one-nearest-neighbour classifier assigns the identity of the closest training example.
+
+9
+00:00:35.841 --> 00:00:38.625
+Reconstruction and recognition are checked separately.
+
+10
+00:00:40.183 --> 00:00:44.423
+The reference report also plots reconstruction error against the number of components.
+
+11
+00:00:45.109 --> 00:00:47.662
+More components retain more image variation.
+
+12
+00:00:48.349 --> 00:00:53.459
+A lower reconstruction error does not, by itself, prove better recognition of unseen people
+
+13
+00:00:53.459 --> 00:00:54.664
+or new photographs.
+
+14
+00:00:56.217 --> 00:00:59.801
+I replaced the reference dataset with photographs of people around me.
+
+15
+00:01:00.487 --> 00:01:04.254
+Recognition worked in this trial, with qualitatively similar results.
+
+16
+00:01:04.941 --> 00:01:08.938
+A separate numerical evaluation of my custom dataset is still needed.
+
+17
+00:01:10.483 --> 00:01:15.690
+The original ORL report records thirty-eight correct predictions out of forty test images, or
+
+18
+00:01:15.690 --> 00:01:17.078
+ninety-five percent.
+
+19
+00:01:17.763 --> 00:01:22.598
+The matrix shown here is that reference result, not a measurement of my custom photographs.
+
+20
+00:01:24.150 --> 00:01:29.915
+The ORL evaluation gives macro precision point nine three, recall point nine five, and F one
+
+21
+00:01:29.915 --> 00:01:31.084
+point nine three.
+
+22
+00:01:31.770 --> 00:01:37.308
+The two errors are subject ten predicted as eighteen, and subject thirty-six predicted as thirty-eight.
+
+23
+00:01:37.996 --> 00:01:39.784
+These are reference results only.
+
+24
+00:01:41.350 --> 00:01:46.221
+The project connects preprocessing, dimensionality reduction, and classification.
+
+25
+00:01:46.907 --> 00:01:52.166
+Next steps are to document the custom split, repeat evaluation, and test lighting changes.
+
+26
+00:01:52.853 --> 00:01:55.358
+Read the full case study on my portfolio.

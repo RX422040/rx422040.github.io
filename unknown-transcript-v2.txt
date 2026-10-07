@@ -1,0 +1,40 @@
+Recognising the unknown
+English narration / synthetic voice
+
+When the world looks unfamiliar.
+What should a detector do when it encounters something outside its training categories? I led a research group exploring unknown-object detection for autonomous driving.
+Source: Concept illustration / AI-generated / not a detector test output
+
+Reproduce. Adapt. Inspect.
+We reproduced Spatial Temporal Unknown Distillation, or STUD, using Python and Detectron2. My work combined research planning, environment setup, data preparation, and inspection of detection results.
+Source: Project midterm record / STUD method credited to its authors
+
+Different sources. One workflow.
+The data work covered BDD one hundred K, COCO twenty seventeen, and YouTube VIS. Adapting formats and selected categories helped connect these sources to the reproduced baseline.
+Source: Project dataset preparation / source adaptation and environment setup
+
+Confidence is not correctness.
+The midterm slides reproduce this example from the STUD paper. Giraffes are marked unknown, while a rock is labelled train at seventy-one percent confidence. This is a paper example and a single detection score, not our measured accuracy.
+Source: STUD, CVPR 2022, Figure 6 / reproduced in midterm slides / not a project test result
+
+Inspect successes and false positives.
+Further paper examples show unknown elephants and unfamiliar indoor objects. The elephant scene also contains a false pedestrian detection. These figures illustrate what to inspect; they are not newly generated outputs from our reproduced system.
+Source: STUD paper, Figure 6 / reference detections / not independently verified project outputs
+
+AUROC measures separation.
+The STUD paper reports an A U R O C of eighty-five point six seven percent on COCO, and seventy-five point six seven on nu Images. These are reference benchmarks for its BDD one hundred K trained detector. They are not final scores from my project.
+Source: STUD, CVPR 2022, Table 1 / ResNet-50 / mean ± SD over 3 runs
+
+Keep the evaluation convention explicit.
+Higher A U R O C means better separation. Under the paper convention, in-distribution detections are positive. F P R at ninety-five is the share of unknown detections wrongly accepted as known when known detections reach ninety-five percent true positive rate.
+Source: Metric interpretation follows the STUD paper / no reconstructed ROC curve
+
+How much difficult weather?
+The midterm plan proposed adverse-weather shares of twenty-five, fifty, seventy-five, and one hundred percent, keeping the training-set size fixed. These are proposed experiment settings, not measured improvements.
+Source: Project midterm plan / PAIR remained exploratory
+
+Make uncertainty visible.
+The contribution is a documented research process: reproduction, data adaptation, and failure analysis. PAIR remained exploratory. Explore the full case study for the evidence and planned next steps.
+Source: rx422040.github.io/autonomous-driving.html
+
+Full case study: https://rx422040.github.io/autonomous-driving.html

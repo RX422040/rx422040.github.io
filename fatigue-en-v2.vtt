@@ -1,0 +1,109 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:02.976
+How do welding settings relate to fatigue life?
+
+2
+00:00:03.662 --> 00:00:08.334
+This statistical modelling project uses twenty-seven observations from a three-factor coursework
+
+3
+00:00:08.334 --> 00:00:09.151
+dataset.
+
+4
+00:00:09.839 --> 00:00:14.256
+The work connects regression diagnostics with interpretable effects and predictions inside the
+
+5
+00:00:14.256 --> 00:00:15.244
+study range.
+
+6
+00:00:16.817 --> 00:00:20.704
+The factors are welding current, voltage, and electrode diameter.
+
+7
+00:00:21.390 --> 00:00:23.276
+Each has three coded levels.
+
+8
+00:00:23.963 --> 00:00:28.951
+I first fitted a full quadratic model, then examined residuals, transformed fatigue life to
+
+9
+00:00:28.951 --> 00:00:31.201
+a log scale, and simplified the model.
+
+10
+00:00:32.750 --> 00:00:37.791
+These original figures show residuals for full quadratic fits before and after taking logs.
+
+11
+00:00:38.477 --> 00:00:41.175
+The aim is to inspect patterns and changing spread.
+
+12
+00:00:41.863 --> 00:00:47.389
+Smaller numerical residuals on a different scale do not, by themselves, establish a better model.
+
+13
+00:00:48.950 --> 00:00:52.644
+The selected model keeps the three main effects on log fatigue life.
+
+14
+00:00:53.330 --> 00:00:57.751
+This newly calculated diagnostic uses the original twenty-seven observations.
+
+15
+00:00:58.439 --> 00:01:02.897
+It compares observed and fitted log responses and shows the remaining residual pattern.
+
+16
+00:01:04.450 --> 00:01:07.658
+The final model has R squared point nine six five eight.
+
+17
+00:01:08.344 --> 00:01:12.681
+Training root mean squared error is point one seven one three on the log scale.
+
+18
+00:01:13.368 --> 00:01:18.684
+Leave-one-out error is point two zero one four, holding the chosen model fixed rather than repeating
+
+19
+00:01:18.684 --> 00:01:20.776
+model selection inside each fold.
+
+20
+00:01:22.317 --> 00:01:26.771
+Holding the other factors fixed, a two point five amp increase in current corresponds to an
+
+21
+00:01:26.771 --> 00:01:31.520
+estimated eight point six eight percent rise in fatigue life on the geometric mean scale.
+
+22
+00:01:32.206 --> 00:01:36.769
+The confidence interval for this fitted effect runs from seven point seven zero to nine point
+
+23
+00:01:36.769 --> 00:01:37.999
+six seven percent.
+
+24
+00:01:39.583 --> 00:01:44.292
+The largest fitted value inside the studied region is approximately seven thousand two hundred
+
+25
+00:01:44.292 --> 00:01:49.855
+and thirteen cycles, at three hundred amps, twenty-five volts and two point five millimetres.
+
+26
+00:01:50.541 --> 00:01:53.567
+This is a model prediction on the geometric mean scale.
+
+27
+00:01:54.254 --> 00:01:57.535
+Independent confirmation runs would test the process choice.

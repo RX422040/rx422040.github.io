@@ -1,0 +1,40 @@
+Vision II
+English narration / synthetic voice
+
+Inside the penalty kick.
+Vision Two turns football penalty video into structured, reviewable evidence. This project connects computer vision with human judgement.
+Source: Original project output / Colombia–England, kick 2 / 2018 World Cup broadcast
+
+39 kicks. Four shoot-outs.
+The dataset covers thirty-nine penalties from four twenty-eighteen World Cup shoot-outs. Shared clip identifiers connect model observations, human labels, and final feature tables.
+Source: Vision II project dataset / human-confirmed labels
+
+From pixels to features.
+Pretrained YOLO eleven models extract observations. Optical flow compensates for camera motion, while motion-constrained beam search links ball detections. Human review resolves uncertain cases.
+Source: Project workflow / pretrained models, task-specific rules and human review
+
+From a frame to a step count.
+This original frame shows the selected taker and retained pose keypoints. In this example, the automatic and manual counts both equal four. A successful example does not establish accuracy across the dataset.
+Source: Original project output / clip col_eng_p02_kane_eng9 / frame 65
+
+Follow the keeper through the dive.
+These four original frames run from one second before the kick to point eight seconds afterwards. Yellow circles mark goalkeeper positions. The exported movement is a low dive towards image left, with automatic quality checks accepted.
+Source: Original goalkeeper QA row / image-left direction, not anatomical left
+
+Inspect the selected candidates.
+The ball sequence samples frames sixty-seven, seventy-four and seventy-six. Yellow circles show selected candidates; magenta crosses show ankle anchors. Detector confidence and quality-check acceptance do not independently verify every tracked point.
+Source: Original ball QA row / selected samples from the retained track
+
+Measure error. Keep the denominator.
+Automatic counting produced thirty-five outputs, with four failures. Against manually confirmed counts, mean absolute error is two point six five seven steps and root mean squared error is three point three seven six. Four predictions match exactly; twelve are within one step.
+Source: Project evaluation / errors evaluated only on the 35 successful automatic outputs
+
+Make uncertainty visible.
+Automatic quality checks accepted eighteen goalkeeper records and twenty-six ball trajectories. The remaining records require review. These acceptance counts measure quality-control status, not detection accuracy.
+Source: Project QA exports / acceptance counts and review flags
+
+Evidence you can inspect.
+The result is an auditable dataset, with explicit uncertainty. Explore the methods, limitations, and all thirty-nine penalties in the Vision Two case study on my portfolio.
+Source: rx422040.github.io/vision-ii.html
+
+Full case study: https://rx422040.github.io/vision-ii.html

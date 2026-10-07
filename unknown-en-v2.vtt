@@ -1,0 +1,117 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:04.493
+What should a detector do when it encounters something outside its training categories?
+
+2
+00:00:05.179 --> 00:00:09.576
+I led a research group exploring unknown-object detection for autonomous driving.
+
+3
+00:00:11.150 --> 00:00:17.016
+We reproduced Spatial Temporal Unknown Distillation, or STUD, using Python and Detectron2.
+
+4
+00:00:17.702 --> 00:00:23.576
+My work combined research planning, environment setup, data preparation, and inspection of detection
+
+5
+00:00:23.576 --> 00:00:24.260
+results.
+
+6
+00:00:25.817 --> 00:00:31.423
+The data work covered BDD one hundred K, COCO twenty seventeen, and YouTube VIS.
+
+7
+00:00:31.423 --> 00:00:36.416
+Adapting formats and selected categories helped connect these sources to the reproduced baseline.
+
+8
+00:00:37.983 --> 00:00:41.398
+The midterm slides reproduce this example from the STUD paper.
+
+9
+00:00:42.084 --> 00:00:47.064
+Giraffes are marked unknown, while a rock is labelled train at seventy-one percent confidence.
+
+10
+00:00:47.751 --> 00:00:52.282
+This is a paper example and a single detection score, not our measured accuracy.
+
+11
+00:00:53.850 --> 00:00:57.932
+Further paper examples show unknown elephants and unfamiliar indoor objects.
+
+12
+00:00:58.618 --> 00:01:01.948
+The elephant scene also contains a false pedestrian detection.
+
+13
+00:01:02.635 --> 00:01:07.356
+These figures illustrate what to inspect; they are not newly generated outputs from our reproduced
+
+14
+00:01:07.356 --> 00:01:07.967
+system.
+
+15
+00:01:09.517 --> 00:01:15.645
+The STUD paper reports an A U R O C of eighty-five point six seven percent on COCO, and seventy-five
+
+16
+00:01:15.645 --> 00:01:17.689
+point six seven on nu Images.
+
+17
+00:01:18.374 --> 00:01:22.444
+These are reference benchmarks for its BDD one hundred K trained detector.
+
+18
+00:01:23.132 --> 00:01:25.490
+They are not final scores from my project.
+
+19
+00:01:27.050 --> 00:01:30.295
+Higher A U R O C means better separation.
+
+20
+00:01:30.981 --> 00:01:34.601
+Under the paper convention, in-distribution detections are positive.
+
+21
+00:01:35.289 --> 00:01:40.131
+F P R at ninety-five is the share of unknown detections wrongly accepted as known when known
+
+22
+00:01:40.131 --> 00:01:43.133
+detections reach ninety-five percent true positive rate.
+
+23
+00:01:44.683 --> 00:01:49.950
+The midterm plan proposed adverse-weather shares of twenty-five, fifty, seventy-five, and one
+
+24
+00:01:49.950 --> 00:01:52.928
+hundred percent, keeping the training-set size fixed.
+
+25
+00:01:53.614 --> 00:01:57.198
+These are proposed experiment settings, not measured improvements.
+
+26
+00:01:58.783 --> 00:02:04.778
+The contribution is a documented research process: reproduction, data adaptation, and failure
+
+27
+00:02:04.778 --> 00:02:05.572
+analysis.
+
+28
+00:02:06.258 --> 00:02:07.743
+PAIR remained exploratory.
+
+29
+00:02:08.430 --> 00:02:11.869
+Explore the full case study for the evidence and planned next steps.

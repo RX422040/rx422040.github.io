@@ -1,0 +1,101 @@
+WEBVTT
+
+1
+00:00:00.350 --> 00:00:04.432
+How do edge chemistry and dispersion corrections change electronic predictions?
+
+2
+00:00:05.118 --> 00:00:10.057
+My capstone investigates pentagonal palladium diselenide nanoribbons through density functional
+
+3
+00:00:10.057 --> 00:00:11.530
+theory calculations.
+
+4
+00:00:13.083 --> 00:00:18.666
+I modelled four hydrogen-passivated edge families: A A, Z Z, Z A, and S S.
+
+5
+00:00:18.666 --> 00:00:24.362
+Fluorine and hydroxyl substitutions at central and lateral sites created four modified configurations.
+
+6
+00:00:25.917 --> 00:00:31.354
+Using Materials Studio and CASTEP, I optimised atomic structures and inspected band structures
+
+7
+00:00:31.354 --> 00:00:32.790
+and density of states.
+
+8
+00:00:33.476 --> 00:00:38.055
+The pristine comparison covers P B E, Grimme, and the T S correction.
+
+9
+00:00:39.617 --> 00:00:44.099
+These original density-of-states plots compare the A A and Z Z edge families.
+
+10
+00:00:44.785 --> 00:00:49.280
+Reading them alongside band structures makes the electronic predictions easier to inspect.
+
+11
+00:00:49.967 --> 00:00:54.809
+Differences belong to the stated computational configurations, rather than direct experimental
+
+12
+00:00:54.809 --> 00:00:55.566
+measurements.
+
+13
+00:00:57.117 --> 00:01:02.675
+For the pristine A A three example, the reported band gap is zero point five eight seven electronvolts
+
+14
+00:01:02.675 --> 00:01:06.296
+with P B E, and zero point five eight one with Grimme.
+
+15
+00:01:07.850 --> 00:01:13.093
+Across the four modified structures, Grimme gaps range from zero point eight seven zero to zero
+
+16
+00:01:13.093 --> 00:01:15.391
+point nine zero seven electronvolts.
+
+17
+00:01:16.077 --> 00:01:20.571
+The corresponding P B E predictions are lower, as the thesis table shows.
+
+18
+00:01:22.117 --> 00:01:27.287
+For central fluorine substitution, the reported gap changes from point zero one five to point
+
+19
+00:01:27.287 --> 00:01:29.148
+eight seven zero electronvolts.
+
+20
+00:01:29.834 --> 00:01:34.547
+For lateral fluorine it changes from point zero three seven to point nine zero seven.
+
+21
+00:01:35.234 --> 00:01:39.668
+This demonstrates sensitivity to the correction, not proven improvement in accuracy.
+
+22
+00:01:41.217 --> 00:01:45.141
+These reported calculations demonstrate sensitivity to the chosen method.
+
+23
+00:01:45.827 --> 00:01:48.453
+They do not establish experimental accuracy.
+
+24
+00:01:49.140 --> 00:01:54.504
+Explore the original models, plots, calculation settings, and limitations in the full project
+
+25
+00:01:54.504 --> 00:01:55.200
+page.

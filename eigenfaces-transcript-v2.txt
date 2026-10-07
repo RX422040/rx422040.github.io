@@ -1,0 +1,36 @@
+Eigenfaces
+English narration / synthetic voice
+
+Recognising familiar faces.
+Can a compact mathematical representation recognise familiar people? I adapted an Eigenfaces workflow to photographs of people I know, connecting linear algebra with a practical recognition task.
+Source: Displayed faces: original ORL reference report / not the custom photograph dataset
+
+From pixels to principal components.
+The workflow prepares consistent grayscale images and subtracts the training mean face. Principal component analysis then learns directions of variation, giving each image a smaller set of coefficients.
+Source: ORL reference report / Figure 5 / first three principal components
+
+Find the nearest neighbour.
+A test image is projected into the same learned space. A one-nearest-neighbour classifier assigns the identity of the closest training example. Reconstruction and recognition are checked separately.
+Source: ORL reference report / Figure 9 / PCA representation with 1-NN classification
+
+Reconstruction is a separate test.
+The reference report also plots reconstruction error against the number of components. More components retain more image variation. A lower reconstruction error does not, by itself, prove better recognition of unseen people or new photographs.
+Source: ORL reference report / Figure 7 / reconstruction error, not recognition accuracy
+
+A custom photo dataset.
+I replaced the reference dataset with photographs of people around me. Recognition worked in this trial, with qualitatively similar results. A separate numerical evaluation of my custom dataset is still needed.
+Source: User-reported custom-photo adaptation / no custom-dataset score available
+
+38 of 40. In the ORL report.
+The original ORL report records thirty-eight correct predictions out of forty test images, or ninety-five percent. The matrix shown here is that reference result, not a measurement of my custom photographs.
+Source: Original ORL report / Figure 8 / one test image per subject
+
+Read beyond the headline accuracy.
+The ORL evaluation gives macro precision point nine three, recall point nine five, and F one point nine three. The two errors are subject ten predicted as eighteen, and subject thirty-six predicted as thirty-eight. These are reference results only.
+Source: ORL reference report / rounded classification metrics / not custom-photo performance
+
+A representation you can inspect.
+The project connects preprocessing, dimensionality reduction, and classification. Next steps are to document the custom split, repeat evaluation, and test lighting changes. Read the full case study on my portfolio.
+Source: rx422040.github.io/eigenfaces.html
+
+Full case study: https://rx422040.github.io/eigenfaces.html

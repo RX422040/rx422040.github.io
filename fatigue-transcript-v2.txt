@@ -1,0 +1,32 @@
+Modelling fatigue life
+English narration / synthetic voice
+
+Predict fatigue life. Explain the fit.
+How do welding settings relate to fatigue life? This statistical modelling project uses twenty-seven observations from a three-factor coursework dataset. The work connects regression diagnostics with interpretable effects and predictions inside the study range.
+Source: MA2261 Coursework 2 / Question 3 / supplied data, not a new welding experiment
+
+Three factors. A defined study region.
+The factors are welding current, voltage, and electrode diameter. Each has three coded levels. I first fitted a full quadratic model, then examined residuals, transformed fatigue life to a log scale, and simplified the model.
+Source: Original report / coding reconstructed from Figure 3.6
+
+Check the response scale.
+These original figures show residuals for full quadratic fits before and after taking logs. The aim is to inspect patterns and changing spread. Smaller numerical residuals on a different scale do not, by themselves, establish a better model.
+Source: Original report / Figures 3.2 and 3.4 / full quadratic models
+
+Check the final fit observation by observation.
+The selected model keeps the three main effects on log fatigue life. This newly calculated diagnostic uses the original twenty-seven observations. It compares observed and fitted log responses and shows the remaining residual pattern.
+Source: Recomputed from source data / final main-effects model / not the earlier quadratic fit
+
+Fit and validation answer different questions.
+The final model has R squared point nine six five eight. Training root mean squared error is point one seven one three on the log scale. Leave-one-out error is point two zero one four, holding the chosen model fixed rather than repeating model selection inside each fold.
+Source: Recomputed from original 27 runs / supplementary validation, not independent experiments
+
+Translate the coefficient back to a change.
+Holding the other factors fixed, a two point five amp increase in current corresponds to an estimated eight point six eight percent rise in fatigue life on the geometric mean scale. The confidence interval for this fitted effect runs from seven point seven zero to nine point six seven percent.
+Source: Final log model / exp(0.1 × current coefficient) / other factors fixed
+
+A useful prediction needs its assumptions.
+The largest fitted value inside the studied region is approximately seven thousand two hundred and thirteen cycles, at three hundred amps, twenty-five volts and two point five millimetres. This is a model prediction on the geometric mean scale. Independent confirmation runs would test the process choice.
+Source: rx422040.github.io/fatigue-life.html
+
+Full case study: https://rx422040.github.io/fatigue-life.html

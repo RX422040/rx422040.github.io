@@ -1,0 +1,36 @@
+Capstone: semiconductor simulation
+English narration / synthetic voice
+
+Electronic properties of PdSe₂.
+How do edge chemistry and dispersion corrections change electronic predictions? My capstone investigates pentagonal palladium diselenide nanoribbons through density functional theory calculations.
+Source: Original capstone models / pentagonal PdSe₂ nanoribbons
+
+Four edge families. Four modifications.
+I modelled four hydrogen-passivated edge families: A A, Z Z, Z A, and S S. Fluorine and hydroxyl substitutions at central and lateral sites created four modified configurations.
+Source: Original thesis and presentation / representative modified structures
+
+Build. Relax. Compare.
+Using Materials Studio and CASTEP, I optimised atomic structures and inspected band structures and density of states. The pristine comparison covers P B E, Grimme, and the T S correction.
+Source: Reported computational settings / pristine comparison includes PBE, Grimme and TS
+
+Inspect the electronic structure.
+These original density-of-states plots compare the A A and Z Z edge families. Reading them alongside band structures makes the electronic predictions easier to inspect. Differences belong to the stated computational configurations, rather than direct experimental measurements.
+Source: Original presentation and thesis / AA and ZZ families / reported simulations
+
+A difference of six millielectronvolts.
+For the pristine A A three example, the reported band gap is zero point five eight seven electronvolts with P B E, and zero point five eight one with Grimme.
+Source: Original AA-3 band-structure outputs / calculation comparison
+
+A stronger method dependence.
+Across the four modified structures, Grimme gaps range from zero point eight seven zero to zero point nine zero seven electronvolts. The corresponding P B E predictions are lower, as the thesis table shows.
+Source: Chart transcribed from thesis Table 4.1 / reported band gaps in eV
+
+A large shift is method sensitivity.
+For central fluorine substitution, the reported gap changes from point zero one five to point eight seven zero electronvolts. For lateral fluorine it changes from point zero three seven to point nine zero seven. This demonstrates sensitivity to the correction, not proven improvement in accuracy.
+Source: Original central-F band/DOS outputs / values cross-checked against Table 4.1
+
+Trace the prediction to its settings.
+These reported calculations demonstrate sensitivity to the chosen method. They do not establish experimental accuracy. Explore the original models, plots, calculation settings, and limitations in the full project page.
+Source: rx422040.github.io/pdse2.html
+
+Full case study: https://rx422040.github.io/pdse2.html
