@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#153ef5">
+  <title>PdSe₂ Nanoribbons & Dispersion Corrections | Ruizhe Xu</title>
+  <meta name="description" content="Ruizhe Xu’s DFT capstone: pristine and F/OH-modified pentagonal PdSe₂ nanoribbons, PBE, Grimme and TS comparisons, with original structures, band plots and thesis results.">
+  <meta property="og:title" content="A closer look at PdSe₂ | Ruizhe Xu"><meta property="og:description" content="How edge chemistry changes the sensitivity of calculated electronic properties to dispersion corrections."><meta property="og:type" content="article"><meta property="og:url" content="https://rx422040.github.io/pdse2.html"><meta property="og:image" content="https://rx422040.github.io/visual-materials.webp">
+  <link rel="canonical" href="https://rx422040.github.io/pdse2.html"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="vision-ii.css"><link rel="stylesheet" href="research-projects.css"><link rel="stylesheet" href="visual-refresh.css"><link rel="stylesheet" href="pdse2.css">
+</head>
+<body class="case-page visual-case topic-materials pdse2-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header"><nav class="nav wrap" aria-label="Main navigation"><a class="brand" href="index.html" aria-label="Ruizhe Xu home"><span class="monogram">rx<span>.</span></span><span>RUIZHE XU</span></a><div class="nav-links"><a href="index.html#work">All projects</a><a href="#models">Models</a><a href="#results">Results</a></div></nav></header>
+<main id="main">
+  <div class="case-stage"><section class="case-hero wrap" id="top">
+    <a class="breadcrumb" href="index.html#work">Selected work / Computational materials</a>
+    <div class="case-hero-grid"><div>
+      <p class="eyebrow">DFT · COMPUTATIONAL MATERIALS · CAPSTONE 2026</p>
+      <h1>A closer look<br>at <span>PdSe₂.</span></h1>
+      <p class="case-lead">Small changes at the edge. Different electronic predictions.</p>
+      <p class="case-intro">I studied how van der Waals corrections affect the calculated electronic properties of pentagonal PdSe₂ nanoribbons. The project moves from four hydrogen-passivated edge families to fluorine and hydroxyl substitutions, comparing structures, band gaps and density of states.</p>
+      <div class="hero-actions"><a class="button primary" href="#results">Explore the results</a><a class="button secondary" href="#models">See the atomic models</a></div>
+    </div><aside class="study-brief" aria-label="Project scope">
+      <span class="column-label">FROM ATOMIC STRUCTURE TO ELECTRONIC RESPONSE</span><div class="brief-number">4<span>pristine edge families</span></div>
+      <div class="brief-grid"><div><strong>3</strong><span>baseline method comparisons</span></div><div><strong>4</strong><span>F / OH substitution cases</span></div></div>
+      <p>AA · ZZ · ZA · SS<br>PBE · Grimme · Tkatchenko–Scheffler<br>Materials Studio / CASTEP</p><div class="tags"><span>Geometry optimisation</span><span>Band structures</span><span>DOS</span></div>
+    </aside></div>
+    <figure class="case-cover"><img src="visual-materials.webp" width="1536" height="1024" decoding="async" alt="Conceptual layered atomic lattice, distinct from the actual PdSe₂ models shown below."><figcaption><strong>Investigating a material, one edge at a time.</strong><span>Concept illustration · AI-generated · Original research figures below</span></figcaption></figure>
+  </section></div>
+  <nav class="case-nav" aria-label="Case study sections"><div class="wrap"><a href="#models">Atomic models</a><a href="#workflow">Calculation workflow</a><a href="#baseline">Pristine baseline</a><a href="#results">Modified structures</a><a href="#reflection">Reflection & sources</a></div></nav>
+
+  <section id="models" class="case-section wrap">
+    <div class="case-section-head"><p class="eyebrow">01 / THE RESEARCH QUESTION</p><h2>What changes when the edge chemistry changes?</h2><p>The study asks whether dispersion corrections have a similar influence on pristine and chemically modified nanoribbons. I first established hydrogen-passivated reference structures, then introduced F or OH at central and lateral sites of the AA ribbon.</p></div>
+    <figure class="research-figure"><a href="pdse2-pristine-models.png" target="_blank" rel="noopener"><img src="pdse2-pristine-models.png" width="1385" height="323" loading="lazy" alt="Original atomic models for AA, ZZ, ZA and SS edge families, with hydrogen, selenium and palladium atom legend."></a><figcaption><strong>Four pristine edge families · Original project models</strong>Hydrogen-passivated AA, ZZ, ZA and SS structures. Source: presentation slide 9; corresponding thesis Figure 3.1. Atom colours and the original figure labels are retained. Open any research figure for its full-resolution image.</figcaption></figure>
+    <div class="prose-grid pdse-spacing"><div><h3>A common reference</h3><p>The baseline models use hydrogen to terminate the ribbon edges. The thesis reports a vacuum region greater than 15 Å along the non-periodic directions to separate periodic images.</p></div><div><h3>A controlled set of modifications</h3><p>Selected hydrogen terminations are replaced by fluorine or hydroxyl groups. Comparing the same two groups at two site types gives four functionalised configurations for the PBE–Grimme study.</p></div></div>
+    <div class="pdse-model-grid">
+      <figure><a href="pdse2-central-f-model.png" target="_blank" rel="noopener"><img src="pdse2-central-f-model.png" width="547" height="184" loading="lazy" alt="Central fluorine-substituted PdSe₂ model, with cyan fluorine atoms."></a><figcaption><strong>Central F</strong><span>Thesis Figure 3.2</span></figcaption></figure>
+      <figure><a href="pdse2-central-oh-model.png" target="_blank" rel="noopener"><img src="pdse2-central-oh-model.png" width="570" height="211" loading="lazy" alt="Central hydroxyl-substituted PdSe₂ model, with red oxygen and white hydrogen atoms."></a><figcaption><strong>Central OH</strong><span>Thesis Figure 3.3</span></figcaption></figure>
+      <figure><a href="pdse2-lateral-f-model.png" target="_blank" rel="noopener"><img src="pdse2-lateral-f-model.png" width="768" height="278" loading="lazy" alt="Lateral fluorine-substituted PdSe₂ model."></a><figcaption><strong>Lateral F</strong><span>Thesis Figure 3.4</span></figcaption></figure>
+      <figure><a href="pdse2-lateral-oh-model.png" target="_blank" rel="noopener"><img src="pdse2-lateral-oh-model.png" width="520" height="187" loading="lazy" alt="Lateral hydroxyl-substituted PdSe₂ model."></a><figcaption><strong>Lateral OH</strong><span>Thesis Figure 3.5</span></figcaption></figure>
+    </div>
+    <p class="fine-print">Modified model images extracted from presentation slide 13; matched to thesis Figures 3.2–3.5 by atom type and substitution site.</p>
+  </section>
+
+  <section id="workflow" class="case-tint"><div class="case-section wrap">
+    <div class="case-section-head"><p class="eyebrow">02 / COMPUTATIONAL WORKFLOW</p><h2>Build. Relax. Compare.</h2><p>I used CASTEP in Materials Studio to connect atomic models with their electronic outputs. The pristine comparison covers PBE, Grimme and TS; the functionalised results below compare PBE with Grimme.</p></div>
+    <ol class="workflow-grid">
+      <li><span class="step-number">01</span><h3>Construct the ribbons</h3><p>Build four edge families, passivate their boundaries and add vacuum separation. Create the central and lateral F/OH variants from the AA reference.</p></li>
+      <li><span class="step-number">02</span><h3>Optimise the geometry</h3><p>Relax each model with the chosen treatment of dispersion, using BFGS geometry optimisation and the reported convergence criteria.</p></li>
+      <li><span class="step-number">03</span><h3>Inspect the electronic output</h3><p>Calculate band structures and density of states, compare the gap values, and inspect the influence of broadening on the DOS plots.</p></li>
+    </ol>
+    <div class="pdse-settings" aria-label="Reported calculation settings">
+      <div><span>Software</span><strong>Materials Studio 2017 R2 / CASTEP</strong></div><div><span>Exchange–correlation</span><strong>GGA–PBE</strong></div>
+      <div><span>Plane-wave cutoff</span><strong>500 eV</strong></div><div><span>Pseudopotentials</span><strong>OTFG ultrasoft</strong></div>
+      <div><span>Geometry energy tolerance</span><strong>5 × 10⁻⁶ eV/atom</strong></div><div><span>Maximum force tolerance</span><strong>0.01 eV/Å</strong></div>
+      <div><span>Displacement tolerance</span><strong>5 × 10⁻⁴ Å</strong></div><div><span>Stress tolerance</span><strong>0.02 GPa</strong></div>
+    </div>
+    <p class="fine-print">Reported settings from thesis Chapter 3 and presentation slide 8. “Grimme” follows the software label shown in the presentation; the page does not infer a specific DFT-D version from that label.</p>
+  </div></section>
+
+  <section id="baseline" class="case-section wrap">
+    <div class="case-section-head"><p class="eyebrow">03 / PRISTINE BASELINE</p><h2>A small gap difference in the AA reference.</h2><p>For the hydrogen-passivated AA-3 example, the presentation reports a PBE gap of 0.587 eV and a Grimme gap of 0.581 eV. Their absolute difference is 0.006 eV, or 6 meV.</p></div>
+    <div class="research-metrics"><article><strong>0.587 <em>eV</em></strong><span>PBE · pristine AA-3</span><small>Reported band gap, presentation slide 12</small></article><article><strong>0.581 <em>eV</em></strong><span>Grimme · pristine AA-3</span><small>Reported band gap, presentation slide 12</small></article><article><strong>6 <em>meV</em></strong><span>Absolute difference</span><small>Calculated from the two reported values</small></article></div>
+    <figure class="research-figure pdse-dos"><a href="pdse2-aa-dos.png" target="_blank" rel="noopener"><img src="pdse2-aa-dos.png" width="1010" height="681" loading="lazy" alt="Original AA density-of-states plot comparing Grimme in black, TS in red and PBE in blue, with a magnified inset."></a><figcaption><strong>Similar DOS profiles in the pristine AA comparison</strong>The three curves largely overlap at the plotting scale shown, with small differences visible in the inset. This original plot is from presentation slide 15, corresponding to thesis Figure 4.1.</figcaption></figure>
+    <details class="pdse-evidence"><summary>Inspect the original AA-3 band-structure outputs</summary><div class="pdse-evidence-body">
+      <figure class="research-figure"><a href="pdse2-aa-grimme-bands.png" target="_blank" rel="noopener"><img src="pdse2-aa-grimme-bands.png" width="1430" height="498" loading="lazy" alt="Original CASTEP AA-3 Grimme band-structure output showing a 0.581 eV band gap."></a><figcaption><strong>Grimme · 0.581 eV</strong>Original software output from presentation slide 12.</figcaption></figure>
+      <figure class="research-figure"><a href="pdse2-aa-pbe-bands.png" target="_blank" rel="noopener"><img src="pdse2-aa-pbe-bands.png" width="1440" height="488" loading="lazy" alt="Original CASTEP AA-3 PBE band-structure output showing a 0.587 eV band gap."></a><figcaption><strong>PBE · 0.587 eV</strong>Original software output from presentation slide 12.</figcaption></figure>
+    </div></details>
+    <aside class="finding"><strong>Plotting choices also matter</strong><p>The thesis examines Gaussian DOS broadening from 0.2 to 0.1, 0.05 and 0.02 eV. Broadening changes the appearance of near-gap features, so the gap values above are taken from the reported band-structure outputs rather than estimated from a smoothed DOS curve.</p></aside>
+  </section>
+
+  <section id="results" class="case-tint"><div class="case-section wrap">
+    <div class="case-section-head"><p class="eyebrow">04 / F & OH MODIFICATIONS</p><h2>A stronger dependence on the calculation method.</h2><p>For the four functionalised structures, the reported Grimme gaps lie between 0.870 and 0.907 eV. The corresponding PBE values span 0.015 to 0.470 eV. This contrast with the pristine AA example is the central result of the project.</p></div>
+    <div class="research-table-wrap" tabindex="0" role="region" aria-label="Functionalised band gap comparison"><table class="research-table"><caption>Reported computational band gaps from thesis Table 4.1, printed page 33 (PDF page 38), cross-checked with presentation slides 16–18. Δ is calculated here as Grimme − PBE; all values are in eV.</caption><thead><tr><th scope="col">Modification</th><th scope="col">PBE</th><th scope="col">Grimme</th><th scope="col">Δ gap</th></tr></thead><tbody>
+      <tr><th scope="row">Central F</th><td>0.015</td><td>0.870</td><td>+0.855</td></tr>
+      <tr><th scope="row">Central OH</th><td>0.470</td><td>0.880</td><td>+0.410</td></tr>
+      <tr><th scope="row">Lateral F</th><td>0.037</td><td>0.907</td><td>+0.870</td></tr>
+      <tr><th scope="row">Lateral OH</th><td>0.048</td><td>0.870</td><td>+0.822</td></tr>
+    </tbody></table></div>
+    <aside class="finding"><strong>A result about model sensitivity</strong><p>These calculations show that changing the dispersion treatment can substantially change the predicted gaps of the modified structures. They are reported simulation outputs; the comparison alone does not establish which values match an experimental band gap.</p></aside>
+    <div class="pdse-plot-intro"><h3>Inside the original results</h3><p>Each figure pairs band structures on the left with DOS on the right. Panels (a–b) use Grimme; panels (c–d) use PBE. Select an image to inspect the original plot.</p></div>
+    <div class="research-figure-grid">
+      <figure class="research-figure"><a href="pdse2-central-f-results.png" target="_blank" rel="noopener"><img src="pdse2-central-f-results.png" width="921" height="618" loading="lazy" alt="Central F: four original panels comparing band structures and DOS under Grimme and PBE."></a><figcaption><strong>Central F · 0.015 → 0.870 eV</strong>Presentation slide 16; thesis Figure 4.5.</figcaption></figure>
+      <figure class="research-figure"><a href="pdse2-central-oh-results.png" target="_blank" rel="noopener"><img src="pdse2-central-oh-results.png" width="1004" height="640" loading="lazy" alt="Central OH: four original panels comparing band structures and DOS under Grimme and PBE."></a><figcaption><strong>Central OH · 0.470 → 0.880 eV</strong>Presentation slide 17; thesis Figure 4.6.</figcaption></figure>
+      <figure class="research-figure"><a href="pdse2-lateral-f-results.jpeg" target="_blank" rel="noopener"><img src="pdse2-lateral-f-results.jpeg" width="1024" height="692" loading="lazy" alt="Lateral F: four original panels comparing band structures and DOS under Grimme and PBE."></a><figcaption><strong>Lateral F · 0.037 → 0.907 eV</strong>Presentation slide 18; thesis Figure 4.7.</figcaption></figure>
+      <figure class="research-figure"><a href="pdse2-lateral-oh-results.png" target="_blank" rel="noopener"><img src="pdse2-lateral-oh-results.png" width="1007" height="691" loading="lazy" alt="Lateral OH: four original panels comparing band structures and DOS under Grimme and PBE."></a><figcaption><strong>Lateral OH · 0.048 → 0.870 eV</strong>Presentation slide 18; thesis Figure 4.8.</figcaption></figure>
+    </div>
+    <p class="fine-print">Arrows in the captions read PBE → Grimme. They compare calculated values, not a time-dependent transition or an experimental improvement.</p>
+  </div></section>
+
+  <section id="reflection" class="case-section wrap">
+    <div class="case-section-head"><p class="eyebrow">05 / REFLECTION & SOURCE RECORD</p><h2>Connecting structures, settings and evidence.</h2></div>
+    <div class="prose-grid"><div><h3>What I practised</h3><p>Constructing atomistic models, setting up geometry optimisation and electronic-property calculations, comparing dispersion treatments, and tracing numerical results back to band structures and DOS plots.</p><p>The project strengthened my ability to organise a computational comparison and communicate both the observed trends and the settings behind them.</p></div><div><h3>What needs further validation</h3><p>Independent benchmarks and systematic convergence checks would be needed to establish quantitative accuracy. The thesis discusses local interactions and edge reconstruction as possible explanations; the reported gaps alone do not prove a unique microscopic mechanism or device-level performance.</p><p>A reproducible extension would preserve the complete input/output files and test the sensitivity to sampling, spin settings and the precise dispersion implementation.</p></div></div>
+    <div class="research-source"><strong>Based on my thesis and final presentation</strong><p><cite>Effect of vdW correction on the electronic properties of pentagonal PdSe₂</cite> — Ruizhe Xu, DUT–Leicester International Institute, 2026. Thesis completion date: 16 May 2026; presentation cover date: 23 May 2026.</p><p>The atomic models and electronic plots on this page are original embedded figures from the supplied presentation, checked against thesis Chapters 3–4. The gap table reproduces thesis Table 4.1. The decorative cover is a concept illustration and is not an exact crystal structure.</p><details><summary>Notes on source labels</summary><p>Some ribbon-width suffixes vary between the thesis text, model illustrations and DOS captions. The overview therefore uses the consistent edge-family names AA, ZZ, ZA and SS; the AA-3 gap example follows the explicit label in presentation slide 12. Original figure labels are preserved. Method names follow the reported PBE, Grimme and TS comparisons.</p></details></div>
+  </section>
+  <section class="case-close"><div class="wrap"><div><p class="eyebrow">COMPUTATIONAL MATERIALS / RUIZHE XU</p><h2>From an atomic model to a question I can test.</h2></div><a class="button secondary" href="index.html#work">Back to all projects</a></div></section>
+</main><footer class="wrap footer"><span>© 2026 Ruizhe Xu</span><span>Pentagonal PdSe₂ nanoribbons</span><a href="#top">Back to top</a></footer>
+</body></html>
