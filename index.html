@@ -42,7 +42,7 @@
     <div class="focus-band"><div class="wrap focus-inner"><span class="focus-label">MY FOCUS</span><span>Computer vision</span><span class="band-plus" aria-hidden="true">+</span><span>Robotics & automation</span><span class="band-plus" aria-hidden="true">+</span><span>Statistical modelling</span></div></div>
     <section id="work" class="section wrap" aria-labelledby="work-title">
       <div class="section-heading"><div><p class="eyebrow">01 / SELECTED WORK</p><h2 id="work-title">Ideas, put into practice.</h2></div><p class="section-intro">Projects spanning visual perception, reliable AI and quantitative research.</p></div>
-      <div class="filter-bar js-control" role="group" aria-label="Filter projects"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All projects</button><button type="button" class="filter" data-filter="vision" aria-pressed="false">Vision & AI</button><button type="button" class="filter" data-filter="modelling" aria-pressed="false">Data & modelling</button><span id="project-count" class="result-count" aria-live="polite">4 projects</span></div>
+      <div class="filter-bar js-control" role="group" aria-label="Filter projects"><button type="button" class="filter active" data-filter="all" aria-pressed="true">All projects</button><button type="button" class="filter" data-filter="vision" aria-pressed="false">Vision & AI</button><button type="button" class="filter" data-filter="modelling" aria-pressed="false">Data & modelling</button><span id="project-count" class="result-count" aria-live="polite">5 projects</span></div>
       <div class="project-grid">
         <article class="project featured" data-category="vision">
           <div class="project-top"><span class="project-type">COMPUTER VISION</span><span class="project-date">2026 · In progress</span></div>
@@ -62,12 +62,22 @@
           <a class="case-link" href="autonomous-driving.html">Read the autonomous-driving case study</a>
           <details><summary>Explore the approach</summary><div class="detail-body"><p>Reproduced the Spatial-Temporal Unknown Distillation (STUD) workflow, adapted BDD100K, COCO2017 and YouTube-VIS data, and inspected qualitative success and failure cases. The midterm study prepared adverse-weather data and proposed 25%, 50%, 75% and 100% weather mixtures. PAIR optimisation remained an exploratory extension.</p><p class="role">Group leader · Jan 2024–Jan 2025</p></div></details>
         </article>
+        <article class="project" data-category="vision">
+          <div class="project-top"><span class="project-type">COMPUTER VISION</span><span class="project-date">2024</span></div>
+          <h3>Eigenfaces</h3><p class="project-subtitle">Recognising faces through linear algebra.</p>
+          <p>Built a PCA and nearest-neighbour recognition workflow on the ORL face dataset, connecting image reconstruction, dimensionality reduction and error analysis.</p>
+          <div class="project-stats"><div><strong>400</strong><span>dataset images</span></div><div><strong>38 / 40</strong><span>correct test predictions</span></div></div>
+          <div class="tags"><span>Python</span><span>PCA</span><span>scikit-learn</span><span>1-NN</span></div>
+          <a class="case-link" href="eigenfaces.html">Read the Eigenfaces case study</a>
+          <details><summary>Explore the approach</summary><div class="detail-body"><p>Centred images using a training mean face, projected them into a PCA representation and classified them with a one-nearest-neighbour model. Evaluated reconstruction, confusion patterns and different training proportions.</p><p>The reported evaluation achieved 95% accuracy on 40 test images, one per enrolled subject. The case study includes the original confusion matrix and evaluation curve.</p><p class="role">Project report · November 2024</p></div></details>
+        </article>
         <article class="project" data-category="modelling">
           <div class="project-top"><span class="project-type">STATISTICAL MODELLING</span><span class="project-date">2025</span></div>
           <h3>Modelling fatigue life</h3><p class="project-subtitle">Connecting process settings to performance.</p>
-          <p>Modelled how welding current, voltage and electrode diameter relate to joint fatigue life, combining experimental design with interpretable statistical analysis.</p>
-          <div class="tags"><span>Response surfaces</span><span>Regression</span><span>Diagnostics</span></div>
-          <details><summary>Explore the approach</summary><div class="detail-body"><p>Fitted second-order polynomial models, tested term significance and used a logarithmic transformation of fatigue life to improve model assumptions. Interpreted parameter effects to identify settings with higher predicted fatigue resistance.</p><p class="role">Individual project · Mar–May 2025</p></div></details>
+          <p>Analysed 27 welding runs in R, comparing polynomial and log-transformed models to understand how current, voltage and electrode diameter relate to fatigue life.</p>
+          <div class="tags"><span>R</span><span>Response surfaces</span><span>Regression</span><span>Diagnostics</span></div>
+          <a class="case-link" href="fatigue-life.html">Read the fatigue-life case study</a>
+          <details><summary>Explore the approach</summary><div class="detail-body"><p>Fitted full quadratic models, examined residuals and selected a simpler log-scale model. Quantified an 8.68% fitted increase for a 0.1 increase in coded current, with a 95% interval of 7.70%–9.67%. The model predicts approximately 7,213 cycles at 300 A, 25 V and a 2.5 mm electrode within the studied range.</p><p class="role">Individual project · Mar–May 2025</p></div></details>
         </article>
         <article class="project" data-category="modelling">
           <div class="project-top"><span class="project-type">COMPUTATIONAL RESEARCH</span><span class="project-date">2026</span></div>
