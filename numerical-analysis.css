@@ -1,4 +1,8 @@
 .numerical-page .figure-explanation{margin-top:30px}
+.numerical-page .smoothing-figure{border:0;padding:0;border-radius:0;background:transparent;box-shadow:none}
+/* Display the original chart pixels inside (248, 188)–(2330, 1450), excluding MATLAB window chrome. */
+.numerical-page .smoothing-chart{position:relative;aspect-ratio:2082/1262;overflow:hidden}
+.numerical-page .smoothing-chart img{position:absolute;width:122.7665706052%;max-width:none;height:auto;left:-11.911623439%;top:-14.8969889065%;border:0;border-radius:0}
 .numerical-page .research-metrics strong{white-space:nowrap}
 @media(max-width:720px){
   .numerical-page .research-metrics article{display:block}
