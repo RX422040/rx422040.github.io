@@ -36,7 +36,8 @@
 .visual-home .film-section,.visual-home .skills-section{position:relative}
 .visual-case{--theme-art:url("visual-home.webp")}
 .topic-vision{--theme-art:url("visual-vision.webp")}
-.topic-driving{--theme-art:url("visual-driving.webp")}
+.topic-driving{--theme-art:url("visual-driving-detection.png")}
+.topic-driving .case-cover>img{height:auto;aspect-ratio:1672/941;object-fit:contain}
 .topic-eigenfaces{--theme-art:url("visual-eigenfaces.webp")}
 .topic-fatigue{--theme-art:url("visual-fatigue.webp")}
 .topic-numerical{--theme-art:url("visual-numerical.webp")}
