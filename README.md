@@ -13,7 +13,7 @@ Single-reviewer agreement, output coverage and successful execution are distinct
 quantities; none is presented as general independent accuracy.
 
 Published source report: `vision-ii-final-report-2026-10-30.pdf` (22 pages).
-SHA-256: `af5eea2a08240bdba2790ede83418c8aa31b10ddc967665b6be7f90a3c69fc2f`.
+SHA-256: `fadd945c94cfb1880ba2fcc8a2720cb48d8d60c9da32197e79bc4a8b7fe37e52`.
 The supplied report is unchanged. The augmentation table's goalkeeper percentage
 is not repeated as a portfolio metric.
 
